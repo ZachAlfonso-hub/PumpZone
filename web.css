@@ -871,7 +871,7 @@ a {
 
 .products-hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                  url('imgs/products-banner');
+                  url('imgs/products-banner.jpg');
   height: 400px;
 }
 
