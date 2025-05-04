@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products - PUMP ZONE</title>
+  <link rel="stylesheet" href="web.css">
+  <link rel="icon" href="imgs/favicon2.png" type="image/png">
+  <style>
+  </style>
+</head>
+<body>
+  <!-- HEADER/NAVIGATION -->
+  <header class="main-header">
+    <div class="logo">
+      <img src="imgs/pzlogo3.png" alt="Pump Zone Logo" id="logo">
+    </div>
+
+    <nav class="sitemap">
+      <a href="index.html" class="nav-card">HOME</a>
+      <a href="about.html" class="nav-card">ABOUT</a>
+      <a href="products.html" class="nav-card">PRODUCTS</a>
+      <a href="index.html#rates" class="nav-card">SERVICES</a>
+      <a href="gallery.html" class="nav-card">GALLERY</a>
+      <a href="#footer" class="nav-card">OTHER PAGES</a>
+      <a href="#footer" class="nav-card">CONTACTS</a>
+    </nav> 
+  <!-- Mobile Menu Button -->
+  <button class="mobile-menu-btn" aria-label="Open menu">☰</button>
+</header>
+
+<!-- Mobile Menu Panel -->
+<div class="mobile-menu">
+  <div class="mobile-menu-header">
+    <div class="logo">
+      <img src="imgs/pzlogo3.png" alt="Pump Zone Logo" style="height: 40px;">
+    </div>
+    <button class="close-btn" aria-label="Close menu">×</button>
+  </div>
+  <a href="index.html">HOME</a>
+  <a href="about.html">ABOUT</a>
+  <a href="products.html">PRODUCTS</a>
+  <a href="index.html#rates">SERVICES</a>
+  <a href="gallery.html">GALLERY</a>
+  <a href="#footer">OTHER PAGES</a>
+  <a href="#footer">CONTACTS</a>
+</div>
+
+<!-- Overlay -->
+<div class="overlay"></div>
+
+  <!-- HERO -->
+  <div class="hero products-hero">
+    <div class="hero-content">
+      <br><br>
+      <br><br>
+      <br><br>
+      <br><br>
+      <h1>PRODUCTS</h1>
+      <p>FUEL YOUR PERFORMANCE</p>
+    </div>
+  </div>
+<br><br>
+<br><br>
+  <!-- MAIN CONTENT -->
+  <main class="content-container">
+    <!-- Category Selection -->
+    <div id="categorySelection">
+      <div class="headers">
+        <h1>OUR PRODUCT CATEGORIES</h1>
+      </div>
+      <div class="product-categories">
+        <!-- Supplements Card -->
+        <div class="category-card" onclick="showProducts('supplements')">
+          <img src="imgs/suppli.png" alt="Supplements">
+          <div class="category-info">
+            <h2>SUPPLEMENTS</h2>
+            <p>Supplements to enhance your performance and recovery</p>
+          </div>
+        </div>
+        
+        <!-- Beverages Card -->
+        <div class="category-card" onclick="showProducts('beverages')">
+          <img src="imgs/beverages.png" alt="Beverages">
+          <div class="category-info">
+            <h2>BEVERAGES</h2>
+            <p>Hydration and energy drinks for optimal performance in the gym</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Supplements Products -->
+    <div id="supplementsProducts" class="products-container">
+      <button class="back-button" onclick="backToCategories()">← BACK TO CATEGORIES</button>
+      <div class="headers">
+        <h1>SUPPLEMENTS</h1>
+      </div>
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <img src="imgs/whey-protein.png" alt="Whey Protein">
+          <div class="product-info">
+            <h3>WHEY PROTEIN</h3>
+            <p>Premium 100% whey protein isolate for muscle recovery</p>
+            <div class="product-price">₱70 PER SCOOP</div>
+          </div>
+        </div>
+        
+        <!-- Product 2 -->
+        <div class="product-card">
+          <img src="imgs/crea.png" alt="Creatine Monohydrate">
+          <div class="product-info">
+            <h3>CREATINE MONOHYDRATE</h3>
+            <p>Pure creatine for strength and power output</p>
+            <div class="product-price">₱30 PER TABLET</div>
+          </div>
+        </div>
+        
+        <!-- Product 3 -->
+        <div class="product-card">
+          <img src="imgs/pre.png" alt="Pre-Workout">
+          <div class="product-info">
+            <h3>PRE-WORKOUT</h3>
+            <p>Energy and focus booster for intense training</p>
+            <div class="product-price">₱90 PER SCOOP</div>
+          </div>
+        </div>
+        
+        <!-- Product 4 -->
+        <div class="product-card">
+          <img src="imgs/mass.png" alt="mass-gainer">
+          <div class="product-info">
+            <h3>MASS GAINER</h3>
+            <p> High-calorie supplement for muscle growth and weight gain.</p>
+            <div class="product-price">₱50 PER SCOOP</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Beverages Products -->
+    <div id="beveragesProducts" class="products-container">
+      <button class="back-button" onclick="backToCategories()">← BACK TO CATEGORIES</button>
+      <div class="headers">
+        <h1>BEVERAGES</h1>
+      </div>
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <img src="imgs/pocari.png" alt="Pocari Sweat">
+          <div class="product-info">
+            <h3>POCARI SWEAT</h3>
+            <p>Replenish electrolytes lost during intense workouts</p>
+            <div class="product-price">₱50</div>
+          </div>
+        </div>
+        
+        <!-- Product 2 -->
+        <div class="product-card">
+          <img src="imgs/sting.png" alt="Sting">
+          <div class="product-info">
+            <h3>STING</h3>
+            <p>Quick energy boost with added B-vitamins</p>
+            <div class="product-price">₱30</div>
+          </div>
+        </div>
+        
+        <!-- Product 3 -->
+        <div class="product-card">
+          <img src="imgs/vitamilk.png" alt="Vitamilk">
+          <div class="product-info">
+            <h3>VITAMILK</h3>
+            <p>Plant-based protein drink for post-workout recovery</p>
+            <div class="product-price">₱40</div>
+          </div>
+        </div>
+        
+        <!-- Product 4 -->
+        <div class="product-card">
+          <img src="imgs/gatorade.png" alt="Gatorade">
+          <div class="product-info">
+            <h3>GATORADE</h3>
+            <p>Rehydrates and restores electrolytes for peak performance</p>
+            <div class="product-price">₱50</div>
+          </div>
+        </div>
+          
+        <!-- Product 5 -->
+        <div class="product-card">
+          <img src="imgs/cobra.png" alt="Cobra">
+          <div class="product-info">
+            <h3>COBRA</h3>
+            <p>Energy drink with B-vitamins for stamina and alertness</p>
+            <div class="product-price">₱30</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+ 
+  <!-- FOOTER -->
+
+
+  <footer class="df-footer" id="footer">
+    <div class="footer-top">
+      <div class="logo">
+        <img src="imgs/pzlogo3.png" alt="Pump Zone Logo" id="logo">
+        <p>Where Strength Meets Purpose.</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>DISCOVER</h4>
+        <ul>
+          <li><a href="about.html#facilities">Our Facilities</a></li>
+          <li><a href="#branches">Our Gym Branches</a></li>
+          <li><a href="gallery.HTML">Gym Gallery</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>INFORMATION</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="about.html#mission">Our Mission</a></li>
+          <li><a href="about.html#values">Our Values</a></li>
+          <li><a href="about.html#guide">Our Rules</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>OFFERS</h4>
+        <ul>
+          <li><a href="products.HTML">Products</a></li>
+          <li><a href="#rates">Gym Membership</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>CONTACTS</h4>
+        <ul>
+          <li><a href="tel:09163274755">SF: 0916-327-4755</a></li>
+          <li><a href="tel:09123456789">SP: 0917-838-8045</a></li>
+        </ul>
+        <div class="social-and-button">
+          <div class="social-icons">
+            <a href="https://www.facebook.com/share/1BscuHw3MK/" aria-label="Facebook" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025, Pump Zone, Gym Bros - BSIT 1C - WS101 - PAMPANGA STATE AGRICULTURAL UNIVERSITY</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="web.js" defer></script>
+</body>
+</html>
